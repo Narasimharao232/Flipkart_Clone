@@ -11,7 +11,7 @@ main{
 }
 nav{
     height: 55px;
-    background-color: var(--blue);;
+    background-color: var(--blue);
     display: flex;
     align-items: center;
 }
@@ -91,4 +91,22 @@ cursor: pointer;
     height: 35vh;
     margin: 10px 0px 10px 11px;
     
+}
+.second{
+    height: 30vh;
+    background-image: url(/images/second_image.jpg);
+    background-size: contain;
+}
+footer{
+    background-color: var(--blue);
+}
+
+footer p{    
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-weight: bold;
+  
 }
