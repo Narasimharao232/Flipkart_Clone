@@ -9,11 +9,14 @@
 main{
     background-color: #f0f0f0;
 }
-nav{
+nav, .nav_search{
     height: 8vh;
     background-color: var(--blue);
     display: flex;
     align-items: center;
+}
+.nav_search{
+    position: relative;
 }
 .flipkart_navbar_logo{
 height: 20px;
@@ -30,6 +33,8 @@ margin-left: 15vw;
     height: 33px;
     background-color: white;
     border-radius: 2px;
+    position: absolute;
+    right: 0;
 }
 #search:hover, .cart,.login_button{
 cursor: pointer;
@@ -38,9 +43,9 @@ cursor: pointer;
 .login_button{
     background-color: white;
     color: var(--blue);
-    padding: 8px;
-    width: 112px;
-    margin-left: 200px;    
+    width: 4vw;
+    height: 5vh;
+    margin-left: 200px;
     border-radius: 2px;
     font-weight: bold;
 }
@@ -111,60 +116,5 @@ footer p{
     font-weight: bold;
   
 }
-@media screen and (max-width : 400px) {
-    nav{
-        flex-direction: column;
-        width: 100%;
-        height: 14vh;
-    }
-    .flipkart_navbar_logo{
-       height: 22px;
-       margin: auto;
-       padding: 5px;
-   }
-   .search_icon{
-    height: 24px;
-    background-color: white;
-    border-radius: 2px;
-    margin-right: -75vw;
-    margin-top: -3.7vh;
-     }
-    .search_bar{
-        width: 60vw;
-        height: 1px;
-        margin-left:-26px;
-        
-    }
-    .login_button{
-        background-color: white;
-        color: var(--blue);
-        padding: 8px;
-        width: 64px;
-        margin-left: 208px;
-        border-radius: 2px;
-        font-weight: bold;
-    }
-    .more{
-        color: white;
-        margin-left: -212px;
-        margin-top: -28px;
-        font-weight: bold;
-    }
-    .cart{
-        height: 33px;
-    border-radius: 50%;
-    margin-left: -18px;
-    margin-top: -23px;
-    }
-    .carts{
-        display: none;
-    }
-    .container1{
-        overflow: scroll;
-    }
-    body{
-        background-color: black;
-    }
-}
-    
+
 
